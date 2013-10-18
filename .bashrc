@@ -12,6 +12,7 @@ alias d='git diff'
 alias t='git diff --staged'
 alias f='git fetch'
 alias s='git status'
+alias e='git reset --soft HEAD^'
 alias m='make'
 alias nethack='ssh nethack@nethack.alt.org'
 
