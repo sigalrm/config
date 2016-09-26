@@ -13,6 +13,9 @@ alias t='git diff --staged'
 alias f='git fetch'
 alias s='git status'
 alias e='git reset --soft HEAD^'
+alias c='git commit -c ORIG_HEAD'
+alias C='git commit -C ORIG_HEAD'
+
 alias m='make'
 alias nethack='ssh nethack@nethack.alt.org'
 
