@@ -1,0 +1,8 @@
+[Command]
+Command=view, view, %f, "%?l{+call cursor(%l,%c)}"
+
+[Launcher]
+DisplayIcon=generic-paginator
+LaunchType=3
+MountType=2
+UnmountIdleTime=0

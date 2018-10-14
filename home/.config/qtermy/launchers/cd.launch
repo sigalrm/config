@@ -1,0 +1,13 @@
+[Command]
+Command=cd, cd, '%f'
+FileDirectory=true
+
+[InputOutput]
+InputType=0
+OutputFileConfirmation=3
+OutputType=0
+
+[Launcher]
+LaunchType=5
+MountType=0
+UnmountIdleTime=0

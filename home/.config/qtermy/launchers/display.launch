@@ -1,0 +1,15 @@
+[Command]
+Command=display, display, %f
+
+[Launcher]
+AutomaticUnmount=false
+DisplayIcon=generic-find
+LaunchType=1
+MountType=2
+UnmountIdleTime=1
+
+[Match]
+FileExtensions=.jpeg .jpg .png
+
+[State]
+LastUseTime=1507353379439

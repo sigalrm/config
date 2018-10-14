@@ -1,0 +1,169 @@
+key Space +Selection :          SelectHandle
+key Plus +Control :             IncreaseFont
+key Minus +Control :            DecreaseFont
+key 1 +Alt :                    SwitchPane|0
+key 1 +Control :                WriteSuggestion|0
+key 1 +Selection :              SelectWord|0
+key 2 +Alt :                    SwitchPane|1
+key 2 +Control :                WriteSuggestion|1
+key 2 +Selection :              SelectWord|1
+key 3 +Alt :                    SwitchPane|2
+key 3 +Control :                WriteSuggestion|2
+key 3 +Selection :              SelectWord|2
+key 4 +Alt :                    SwitchPane|3
+key 4 +Control :                WriteSuggestion|3
+key 4 +Selection :              SelectWord|3
+key Semicolon +Control :        SelectOutput
+key A +Shift+Control :          SelectAll
+key A +Control :                "\x01"
+key A +Selection :              SelectHandleBackChar
+key B +Control :                "\x02"
+key C +Shift+Control :          Copy
+key C +Control :                "\x03"
+key D +Shift+Control :          SearchDown
+key D +Control :                "\x04"
+key D +Selection :              SelectHandleForwardChar
+key E +Control :                "\x05"
+key E +Selection :              SelectHandleForwardWord
+key F +Shift+Control :          Find
+key F +Control :                "\x06"
+key G +Control :                "\a"
+key H +Control :                "\b"
+key I +Control :                "\t"
+key J +Control :                "\n"
+key K +Control :                "\v"
+key L +Shift+Control :          NewLocalTerminal
+key L +Control :                "\f"
+key M +Control :                "\r"
+key N +Shift+Control :          NewWindow
+key N +Control :                "\x0e"
+key O +Control :                "\x0f"
+key P +Control :                "\x10"
+key Q +Shift+Control :          CloseWindow
+key Q +Control :                "\x11"
+key Q +Selection :              SelectHandleBackWord
+key R +Shift+Control :          SearchReset
+key R +Control :                "\x12"
+key S +Shift+Control :          ToolSearch
+key S +Control :                "\x13"
+key S +Selection :              SelectHandleDownLine
+key T +Shift+Control :          NewTerminal
+key T +Control :                "\x14"
+key U +Shift+Control :          SearchUp
+key U +Control :                "\x15"
+key V +Shift+Control :          Paste
+key V +Control :                "\x16"
+key W +Shift+Control :          CloseTerminal
+key W +Control :                "\x17"
+key W +Selection :              SelectHandleUpLine
+key X +Control :                "\x18"
+key Y +Control :                "\x19"
+key Z +Control :                "\x1a"
+key Escape +Selection :         ToggleSelectionMode
+key Escape +Command :           ToggleCommandMode
+key Escape  :                   "\E"
+key Tab +Control :              SuggestPrevious
+key Tab  :                      "\t"
+key Backtab  :                  SuggestNext
+key Backspace  :                "\x7f"
+key Return +Selection+Shift :   WriteSelection
+key Return +Shift :             WriteSuggestion
+key Return +Control :           ToolAction|0
+key Return +Alt :               ToolAction|1
+key Return +NewLine :           "\r\n"
+key Return -NewLine :           "\r"
+key Enter +KeyPad :             "\n"
+key Enter +NewLine :            "\r\n"
+key Enter -NewLine :            "\r"
+key Insert +Shift+Control :     PasteSelectBuffer
+key Insert +Shift :             Paste
+key Insert +Selection :         SelectLine
+key Insert +AnyMod :            "\E[2;*~"
+key Insert  :                   "\E[2~"
+key Delete +AnyMod :            "\E[3;*~"
+key Delete  :                   "\E[3~"
+key Home +Alt :                 ToolFirst
+key Home +Shift-AppScreen :     ScrollToTop
+key Home +Selection :           SelectLine|1
+key Home +AppCuKeys :           "\EOH"
+key Home +AnyMod :              "\E[1;*H"
+key Home  :                     "\E[H"
+key End +Alt :                  ToolLast
+key End +Shift-AppScreen :      ScrollToBottom
+key End +Selection :            SelectLine|2
+key End +AppCuKeys :            "\EOF"
+key End +AnyMod :               "\E[1;*F"
+key End  :                      "\E[F"
+key Left +Shift+Control :       ReorderTerminalForward
+key Left +Control :             PreviousPane
+key Left +Shift :               PreviousTerminal
+key Left +Selection :           SelectMoveBackWord
+key Left +AppCuKeys :           "\EOD"
+key Left +AnyMod :              "\E[1;*D"
+key Left  :                     "\E[D"
+key Up +Alt :                   ToolPrevious
+key Up +Shift+Control :         ScrollPromptUp
+key Up +Shift-AppScreen :       ScrollLineUp
+key Up +Selection :             SelectMoveUpLine
+key Up +AppCuKeys :             "\EOA"
+key Up +AnyMod :                "\E[1;*A"
+key Up  :                       "\E[A"
+key Right +Shift+Control :      ReorderTerminalBackward
+key Right +Control :            NextPane
+key Right +Shift :              NextTerminal
+key Right +Selection :          SelectMoveForwardWord
+key Right +AppCuKeys :          "\EOC"
+key Right +AnyMod :             "\E[1;*C"
+key Right  :                    "\E[C"
+key Down +Alt :                 ToolNext
+key Down +Shift+Control :       ScrollPromptDown
+key Down +Shift-AppScreen :     ScrollLineDown
+key Down +Selection :           SelectMoveDownLine
+key Down +AppCuKeys :           "\EOB"
+key Down +AnyMod :              "\E[1;*B"
+key Down  :                     "\E[B"
+key PgUp +Shift-AppScreen :     ScrollPageUp
+key PgUp +AnyMod :              "\E[5;*~"
+key PgUp  :                     "\E[5~"
+key PgDown +Shift-AppScreen :   ScrollPageDown
+key PgDown +AnyMod :            "\E[6;*~"
+key PgDown  :                   "\E[6~"
+key ScrollLock  :               ToggleSoftScrollLock
+key F1 +Shift :                 RaiseKeymapTool
+key F1 +AnyMod :                "\E[1;*P"
+key F1  :                       "\EOP"
+key F2 +Shift :                 RaiseTerminalsTool
+key F2 +AnyMod :                "\E[1;*Q"
+key F2  :                       "\EOQ"
+key F3 +Shift :                 RaiseSuggestionsTool
+key F3 +AnyMod :                "\E[1;*R"
+key F3  :                       "\EOR"
+key F4 +Shift :                 RaiseSearchTool
+key F4 +AnyMod :                "\E[1;*S"
+key F4  :                       "\EOS"
+key F5 +Shift :                 RaiseFilesTool
+key F5 +AnyMod :                "\E[15;*~"
+key F5  :                       "\E[15~"
+key F6 +Shift :                 RaiseHistoryTool
+key F6 +AnyMod :                "\E[17;*~"
+key F6  :                       "\E[17~"
+key F7 +Shift :                 RaiseAnnotationsTool
+key F7 +AnyMod :                "\E[18;*~"
+key F7  :                       "\E[18~"
+key F8 +Shift :                 RaiseTasksTool
+key F8 +AnyMod :                "\E[19;*~"
+key F8  :                       "\E[19~"
+key F9 +Shift :                 CustomRotateTheme
+key F9 +AnyMod :                "\E[20;*~"
+key F9  :                       "git commit -m ""\E[D"
+key F10 +Shift :                CustomRectangleCopy
+key F10 +AnyMod :               "\E[21;*~"
+key F10  :                      CopyJob
+key F11 +AnyMod :               "\E[23;*~"
+key F11  :                      ToggleFullScreen
+key F12 +AnyMod :               "\E[24;*~"
+key F12  :                      TogglePresentationMode
+key Menu +Shift :               ToolContextMenu
+key Menu  :                     TerminalContextMenu
+key Back  :                     PreviousTerminal
+key Forward  :                  NextTerminal

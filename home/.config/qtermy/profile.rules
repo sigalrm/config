@@ -1,0 +1,2 @@
+is "Default" is "proc.comm" "emacs" push "Solarized"
+is "Solarized" isnot "proc.comm" "emacs" pop "Default"

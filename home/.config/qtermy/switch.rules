@@ -1,0 +1,2 @@
+any "Default" contains "proc.argv" "nethack" push "Nethack"
+is "Nethack" !contains "proc.argv" "nethack" pop "Default"

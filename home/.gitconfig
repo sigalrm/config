@@ -3,4 +3,8 @@
 
 [user]
 	name = Eamon Walsh
-	email = efw@eamonwalsh.com
+	email = ewalsh@termysequence.com
+	signingkey = A9F5A4E0
+
+[interactive]
+        singleKey = true

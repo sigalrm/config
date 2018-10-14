@@ -1,0 +1,7 @@
+[Command]
+Command=emacsclient, emacsclient, -n, %?l{+%l:%c}, %f
+
+[Launcher]
+DisplayIcon=generic-editor
+LaunchType=1
+MountType=1
