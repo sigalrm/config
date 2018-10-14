@@ -1,0 +1,19 @@
+--- a/make.mjs	2018-05-10 18:51:03.000000000 -0400
++++ b/make.mjs	2018-04-26 00:40:06.784471017 -0400
+@@ -8,14 +8,13 @@
+ 
+ // Command aliases
+ // To enable this parser for aliases such as 'm', enter the aliases here:
+-// var aliases = [ 'make', 'm' ];
+-var aliases = [ 'make' ];
++var aliases = [ 'make', 'm' ];
+ 
+ // Editor launcher
+ // Specify the launch configuration to run when double-clicking a message.
+ // In addition to the normal URL and path substitutions, the launch command
+ // can also contain %l for the line number and %c for the column number.
+-var editorLauncher = 'Default';
++var editorLauncher = 'emacsclient';
+ 
+ function FileParams(parser, id, icon, path, line, column) {
+     var idpath = parser.server + '|' + path;
