@@ -1,0 +1,19 @@
+#!/bin/bash
+
+openssl enc -aes256 -d -in ~/.ssh/passdb -out ~/.ssh/passdb.txt
+if [ $? != 0 ]; then
+    echo 'Problem running openssl, bailing out.'
+    exit 1
+fi
+
+less ~/.ssh/passdb.txt
+
+read -p 'Remove file? (y|n) [y] ' answer
+
+if [ $answer == 'n' ]; then
+    echo 'File NOT removed.'
+    exit 0
+else
+    echo 'Shredding file...'
+    shred -u ~/.ssh/passdb.txt
+fi

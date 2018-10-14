@@ -1,0 +1,27 @@
+#!/bin/bash
+
+openssl enc -aes256 -in ~/.ssh/passdb.txt -out ~/.ssh/passdb
+if [ $? != 0 ]; then
+	echo 'Problem running openssl, bailing out.'
+	exit 1
+fi
+
+chmod 600 ~/.ssh/passdb
+
+read -p 'Remove file? (y|n) [y] ' answer
+
+if [ $answer == 'n' ]; then
+    echo 'File NOT removed.'
+else
+    echo 'Shredding file...'
+    shred -u ~/.ssh/passdb.txt
+fi
+
+if [ "$BACKUP_DIR" ]; then
+    if [ -f "$BACKUP_DIR" ]; then
+   	cp -f ~/.ssh/passdb "$BACKUP_DIR"
+        echo "Backup made to $BACKUP_DIR."
+    else
+	echo "No backup made because $BACKUP_DIR does not exist."
+    fi
+fi
