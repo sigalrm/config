@@ -1,0 +1,2 @@
+UNDOTTED="bin"
+SYMLINK_DIRS="bin config/qtermy"

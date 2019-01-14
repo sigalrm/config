@@ -1,0 +1,9 @@
+/dotfiles/config/qtermy/qtermy.state
+/dotfiles/config/qtermy/servers/
+
+*~
+.#*
+*.bak
+*.orig
+*.rej
+*.swp

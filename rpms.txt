@@ -37,6 +37,7 @@ python3-sphinx
 qt5-linguist
 qt5-qtbase-devel
 qt5-qtsvg-devel
+rcm
 rpm-build
 sqlite-devel
 systemd-devel
