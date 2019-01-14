@@ -5,5 +5,5 @@ cleanup() {
 }
 trap cleanup EXIT
 
-cd $HOME/build
-make -j4
+pushd $HOME/build
+make -j4 "$@"
