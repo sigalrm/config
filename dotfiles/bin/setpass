@@ -1,6 +1,6 @@
 #!/bin/bash
 
-openssl enc -aes256 -in ~/.ssh/passdb.txt -out ~/.ssh/passdb
+openssl enc -aes256 -pbkdf2 -in ~/.ssh/passdb.txt -out ~/.ssh/passdb
 if [ $? != 0 ]; then
 	echo 'Problem running openssl, bailing out.'
 	exit 1
