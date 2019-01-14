@@ -15,7 +15,7 @@ if [ -n "$DISPLAY" ]; then
 fi
 
 if [ "$TERMYSEQUENCE" ]; then
-    source /usr/local/share/termy-serverd/iterm2_shell_integration.bash
+    source /usr/share/termy-server/iterm2_shell_integration.bash
 fi
 
 if false; then
