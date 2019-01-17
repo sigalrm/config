@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$HOME/.local/bin:$HOME/git/config/bin:$HOME/git/depot_tools:$PATH
+PATH=$HOME/.local/bin:$HOME/bin:$HOME/git/depot_tools:$PATH
 export PATH
 
 if [ -n "$DISPLAY" ]; then
