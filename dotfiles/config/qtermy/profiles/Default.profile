@@ -1,5 +1,6 @@
 [Appearance]
 Badge=
+ColumnFills="76:3,80:1"
 FixedIcon=
 Font="DejaVu Sans Mono,12,-1,5,50,0,0,0,0,0"
 NumRecentPrompts=45
