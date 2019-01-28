@@ -3,6 +3,7 @@ copr-cli
 debhelper
 desktop-file-utils
 devscripts
+dh-autoreconf
 dput-ng
 fedora-packager
 fuse3-devel
@@ -26,6 +27,7 @@ python3-sphinx
 qt5-linguist
 qt5-qtbase-devel
 qt5-qtsvg-devel
+quilt
 sqlite-devel
 systemd-devel
 utf8cpp-devel

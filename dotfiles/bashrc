@@ -18,7 +18,13 @@ export DEBFULLNAME='Eamon Walsh'
 unset MAILCHECK
 unset command_not_found_handle
 
+if [ -d "$XDG_RUNTIME_DIR" ]; then
+   export GPG_AGENT_INFO="$XDG_RUNTIME_DIR/gnupg/S.gpg-agent:0:1"
+   export GPG_TTY=$(tty)
+fi
+
 # Chdir aliases
+alias cg='cd $HOME/git'
 alias cn='cd $HOME/git/termysequence'
 alias c8='cd $HOME/git/termysequence/vendor/v8-linux'
 alias ci='cd $HOME/git/termy-icon-theme'
@@ -62,7 +68,7 @@ alias c='git commit -c ORIG_HEAD'
 alias d='git diff'
 alias e='git reset --soft HEAD^'
 alias f='git fetch'
-alias g='cn;git grep -w '
+alias g='git grep -w'
 alias l='git log --decorate=auto'
 alias o='git log --oneline'
 alias s='git status'
