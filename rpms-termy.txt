@@ -19,6 +19,7 @@ libwebsockets-devel
 libxml2-devel
 ninja-build
 osc
+perl-Term-ReadLine-Gnu
 perl-UUID-Tiny
 python2
 python2-jinja2

@@ -9,23 +9,26 @@ sudo systemctl enable sshd.socket sshd.service
 sudo systemctl start sshd.socket sshd.service
 
 echo 'Setting up rcm'
-ln -sT git/config/dotfiles .dotfiles
-ln -sT git/config/dotfiles/rcrc .rcrc
+ln -sfT git/config/dotfiles .dotfiles
+ln -sfT git/config/dotfiles/rcrc .rcrc
 
-read -p "Install RPMS? (y/n) [y] "
+echo 'Installing base RPMs'
+sudo dnf -y install $(<git/config/rpms.txt) || exit 1
+
+read -p "Install workstation RPMs? (y/n) [y] "
 if [ "${REPLY:-y}" = y -o "${REPLY:-y}" = Y ]; then
-    sudo dnf -y install $(<git/config/rpms.txt) || exit 1
+    sudo dnf install $(<git/config/rpms-ws.txt) || exit 1
 
-    read -p "Install termy-devel RPMS? (y/n) [y] "
+    read -p "Install termy-devel RPMs? (y/n) [y] "
     if [ "${REPLY:-y}" = y -o "${REPLY:-y}" = Y ]; then
-        sudo dnf -y install $(<git/config/rpms-termy.txt) || exit 1
+        sudo dnf install $(<git/config/rpms-termy.txt) || exit 1
     fi
-
-    echo 'Running rcup'
-    rcup
-
-    echo 'Running termy-setup'
-    termy-setup --systemd
 fi
+
+echo 'Running rcup'
+rcup
+
+echo 'Running termy-setup'
+termy-setup --systemd
 
 echo 'Now log out and back in'

@@ -1,3 +1,6 @@
+Host *.fedoraproject.org
+	IdentityFile ~/.ssh/fedora
+
 Host *
 	IdentityFile ~/.ssh/id_rsa
 	PasswordAuthentication no

@@ -42,6 +42,7 @@ alias ls='ls --color=auto --hyperlink=auto'
 alias ll='ls -l --color=auto --hyperlink=auto'
 alias l.='ls -d .* --color=auto --hyperlink-auto'
 
+alias relm='ck;bin/relman.pl'
 alias nethack='ssh nethack@nethack.alt.org'
 
 alias j='journalctl --user --follow -o cat'

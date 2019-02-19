@@ -1,13 +1,9 @@
 diffstat
-emacs
+emacs-nox
 gcc-c++
 gdb
-gimp
-gnuplot
-graphviz
-inkscape
 patch
 rcm
 rpm-build
-termy-qt
+termy-server
 vim

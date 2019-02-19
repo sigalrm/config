@@ -1,0 +1,6 @@
+emacs
+gimp
+gnuplot
+graphviz
+inkscape
+termy-qt
